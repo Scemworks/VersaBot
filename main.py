@@ -252,38 +252,15 @@ async def tarot(ctx: SlashContext):
     )
     await msg.edit(embeds=[tembed2])
 
-#React on all message sent by users in server with random emoji
-    emoji_list[
-    '😀',
-    '😂',
-    '😍',
-    '😎',
-    '🤓',
-    '🤡',
-    '😡',
-    '😱',
-    '😠',
-    '🤬',
-    '🤯',
-    '🤮',
-    '😭',
-    '😤',
-    '🤥',
-    '😐',
-    '😕',
-    '🙄',
-    '😒',
-    '😔',
-    '😓',
-    '😴',
-    '😈',
-    '😜',
-    '😝',
-    '😛',
-    '🤨']
-@bot.event
+emoji_list = [
+    '😀', '😂', '😍', '😎', '🤓', '🤡', '😡', '😱', '😠', '🤬',
+    '🤯', '🤮', '😭', '😤', '🤥', '😐', '😕', '🙄', '😒', '😔',
+    '😓', '😴', '😈', '😜', '😝', '😛', '🤨'
+]
+
+@listen()
 async def on_message(message):
-    if message.author == bot.user:
+    if message.author.bot:
         return
     await message.add_reaction(random.choice(emoji_list))
 
