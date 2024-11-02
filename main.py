@@ -16,4 +16,16 @@ async def on_ready():
     print(f"Logged in as {bot.user}")
     print(f"Owned by: {bot.owner}")
 
+@slash_command(
+    name="Ping",
+    description="Ping the latency of the bot",
+)
+async def ping(ctx: SlashContext):
+    ping = Embed(
+        title = "Ping!",
+        description="Pong! {bot.latency * 1000}ms",
+        color = interactions.Color.random()
+    )
+    await ctx.send(embeds=ping)
+
 bot.start(token)
