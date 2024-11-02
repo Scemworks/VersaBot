@@ -270,7 +270,7 @@ async def help(ctx: SlashContext):
     )
     await ctx.send(embeds=[hembed])
 @bot.event()
-async def on_message_create(event: MessageCreate):
+async def on_message_create(event: Message):
     if event.message.author.bot:
         return
     prod_reply = "Keep Going, You are doing great!"
