@@ -269,5 +269,10 @@ async def help(ctx: SlashContext):
         inline=False
     )
     await ctx.send(embeds=[hembed])
-
+@bot.event()
+async def on_message_create(event: MessageCreate):
+    if event.message.author.bot:
+        return
+    prod_reply = "Keep Going, You are doing great!"
+    await event.message.reply(content=prod_reply)
 bot.start(token)
