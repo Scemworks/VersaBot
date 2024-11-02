@@ -4,6 +4,7 @@ from interactions import*
 import os
 from dotenv import load_dotenv
 import random
+import asyncio
 
 #Import token from .env file
 load_dotenv()
