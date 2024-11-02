@@ -226,4 +226,47 @@ async def tarot(ctx: SlashContext):
     )
     await msg.edit(embeds=[tembed2])
 
+#Help command with amazing embed and syntaxes
+@slash_command(
+    name="help",
+    description="Get help with the bot"
+)
+async def help(ctx: SlashContext):
+    hembed = Embed(
+        title="Help",
+        description="Here are the commands you can use with the bot",
+        color=interactions.Color.random()
+    )
+    hembed.add_field(
+        name="!help",
+        value="Shows this message",
+        inline=False
+    )
+    hembed.add_field(
+        name="!dice",
+        value="Rolls a dice",
+        inline=False
+    )
+    hembed.add_field(
+        name="!flip",
+        value="Flips a coin",
+        inline=False
+    )
+    hembed.add_field(
+        name="!qr",
+        value="Generates a QR Code from link/text given (with optional support for logo and color)",
+        inline=False
+    )
+    hembed.add_field(
+        name="!fortune",
+        value="Get a random fortune",
+        inline=False
+    )
+    hembed.add_field(
+        name="!tarot",
+        value="Draw a tarot card with an emoji!",
+        inline=False
+    )
+    await ctx.send(embeds=[hembed])
+
 bot.start(token)
