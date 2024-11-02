@@ -89,7 +89,7 @@ async def flip(ctx: SlashContext):
 @slash_option(
     name="logo_url",
     description="URL of image to use as logo",
-    opt_type=OptionType.STRING
+    opt_type=OptionType.STRING,
     required=False
 )
 @slash_option(
@@ -102,7 +102,7 @@ async def qr(ctx: SlashContext, link: str, logo_url: str = None, color: str = No
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_H,
-        box_size=10
+        box_size=10,
         border=4
     )
     qr.add_data(link)
