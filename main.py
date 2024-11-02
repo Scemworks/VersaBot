@@ -51,5 +51,25 @@ async def dice(ctx: SlashContext):
     )
     await msg1.edit(embeds=[diceembed2])
 
+@slash_command(
+    name="flip",
+    description="Flips a coin"
+)
+async def flip(ctx: SlashContext):
+    coin = ['Heads', 'Tails']
+    coinembed = Embed(
+        title="Coin Flip",
+        description="Flipping the coin...",
+        color=interactions.Color.random()
+    )
+    msg = await ctx.send(embeds=[coinembed])
+    await asyncio.sleep(3)
+
+    coinembed2 = Embed(
+        title="Coin Flip",
+        description=f"Flipped {random.choice(coin)}",
+        color=interactions.Color.random()
+    )
+    await msg.edit(embeds=[coinembed2])
     
 bot.start(token)
