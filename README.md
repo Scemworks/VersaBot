@@ -49,18 +49,25 @@ python main.py
 ### Project Documentation
 For Software:
 
-# Screenshots
+# Screenshots (Add at least 3)
 ![Screenshot1](src/flip.gif)
 *Working of flip command*
-![Screenshot2](src/fortune.gif)
+![Screenshot1](src/fortune.gif)
 *Working of fortune command*
-![Screenshot3](src/ping.gif)
+![Screenshot1](src/ping.gif)
 *Working of ping command*
-![Screenshot4](src/qr.gif)
+![Screenshot1](src/qr.gif)
 *Working of qr command*
-![Screenshot5](src/tarot.gif)
+![Screenshot1](src/tarot.gif)
 *Working of tarot command*
+![Screenshot1](src/dice.gif)
+*Working of dice command*
 
+
+### Project Demo
+# Video
+[Add your demo video link here]
+*Explain what the video demonstrates*
 
 
 ## Team Contributions
