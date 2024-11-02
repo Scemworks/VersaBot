@@ -48,6 +48,7 @@ async def dice(ctx: SlashContext):
         description=f"Rolled dice {random.choices(dice1)}",
         color=interactions.Color.random()
     )
+    await msg1.edit(embeds=[diceembed2])
 
     
 bot.start(token)
