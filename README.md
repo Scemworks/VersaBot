@@ -50,9 +50,9 @@ python main.py
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
+!
+https://media.discordapp.net/attachments/1302222338271744100/1302225621090308138/video_20241102_162100_edit.mp4?ex=6727579e&is=6726061e&hm=425dbd12ad0163ac260cff2e37187b3d7d3574a66bd170c12c5a9c4df0138bc0&
+Showing working of dice command
 ![Screenshot2](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
 
