@@ -49,7 +49,7 @@ python main.py
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots
 ![Screenshot1](src/flip.gif)
 *Working of flip command*
 ![Screenshot2](src/fortune.gif)
@@ -61,11 +61,6 @@ For Software:
 ![Screenshot5](src/tarot.gif)
 *Working of tarot command*
 
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
 
 
 ## Team Contributions
