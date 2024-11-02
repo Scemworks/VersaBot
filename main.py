@@ -87,7 +87,7 @@ async def flip(ctx: SlashContext):
     required=True
     )
 @slash_option(
-    name="logo_url"
+    name="logo_url",
     description="URL of image to use as logo",
     opt_type=OptionType.STRING
     required=False
@@ -136,5 +136,5 @@ async def qr(ctx: SlashContext, link: str, logo_url: str = None, color: str = No
     qrembed.set_footer(f"Requested by {ctx.author}")
     qrembed.set_image(url="attachment://qrcode.png")
     await ctx.send(embeds=[qrembed], files=[file])
-    
+
 bot.start(token)
