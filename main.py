@@ -42,7 +42,7 @@ async def dice(ctx: SlashContext):
         color=interactions.Color.random()
     )
     msg1 = await ctx.send(embeds=[diceembed])
-    await asyncio.sleep(5)
+    await asyncio.sleep(3)
 
     diceembed2 = Embed(
         title="Dice Roll",
