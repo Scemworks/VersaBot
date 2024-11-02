@@ -22,8 +22,8 @@ async def on_ready():
 )
 async def ping(ctx: SlashContext):
     ping = Embed(
-        title = "Ping!",
-        description=f"Pong! Latency: {round(bot.latency * 1000)}ms",
+        title = "Pong!",
+        description=f"{round(bot.latency * 1000)}ms",
         color = interactions.Color.random()
     )
     await ctx.send(embeds=ping)
