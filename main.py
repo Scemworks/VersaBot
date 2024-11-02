@@ -208,4 +208,32 @@ async def fortune(ctx:SlashContext):
         description=f"{random.choice(fortunes)}",
         color=interactions.Color.random())
     await msg.edit(embeds=[fembed2])
+
+@slash_command(
+    name="tarot",
+    description="Draw a tarot card with an emoji!"
+)
+async def tarot(ctx: SlashContext):
+
+    tarot_cards = [
+    {"name": "The Fool", "emoji": "🤹"},
+    {"name": "The Magician", "emoji": "🧙"},
+    {"name": "The High Priestess", "emoji": "👸"},
+    {"name": "The Empress", "emoji": "👑"},
+    {"name": "The Emperor", "emoji": "🤴"},
+]
+    tembed = Embed(
+        title="Tarot Card",
+        description="Drawing a tarot card...",
+        color=interactions.Color.random()
+    )
+    msg = await ctx.send(embeds=[tembed])
+    await asyncio.sleep(3)
+
+    tembed2 = Embed(
+        title="Tarot Card",
+        description=f"Your tarot card is {random.choice(tarot_cards)['name']} {random.choice(tarot_cards)['emoji']}",
+        color=interactions.Color.random()
+    )
+    await msg.edit(embeds=[tembed2])
 bot.start(token)
