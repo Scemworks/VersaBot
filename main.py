@@ -252,21 +252,4 @@ async def tarot(ctx: SlashContext):
     )
     await msg.edit(embeds=[tembed2])
 
-# List of emojis to choose from
-emoji_list = [
-    '😀', '😂', '😍', '😎', '🤓', '🤡', '😡', '😱', '😠', '🤬',
-    '🤯', '🤮', '😭', '😤', '🤥', '😐', '😕', '🙄', '😒', '😔',
-    '😓', '😴', '😈', '😜', '😝', '😛', '🤨'
-]
-
-@bot.event
-
-
-async def on_message(message):
-    if message.author.id == bot.user.id:
-        return
-    if message.content.startswith('.'):
-        await message.reply(random.choice(emoji_list))
-
-
 bot.start(token)
