@@ -252,16 +252,27 @@ async def tarot(ctx: SlashContext):
     )
     await msg.edit(embeds=[tembed2])
 
+# List of emojis to choose from
 emoji_list = [
     '😀', '😂', '😍', '😎', '🤓', '🤡', '😡', '😱', '😠', '🤬',
     '🤯', '🤮', '😭', '😤', '🤥', '😐', '😕', '🙄', '😒', '😔',
     '😓', '😴', '😈', '😜', '😝', '😛', '🤨'
 ]
 
-@listen()
-async def on_message(message):
+@bot.event
+async def message_create(message):
+    # Ignore messages from bots (including itself)
     if message.author.bot:
         return
-    await message.add_reaction(random.choice(emoji_list))
 
+    # Choose a random emoji from the list
+    emoji = random.choice(emoji_list)
+
+    try:
+        # Add the reaction to the message
+        await message.create_reaction(emoji)
+        print(f"Added {emoji} reaction to message ID {message.id}")
+    except interactions.api.error.DiscordError as e:
+        print(f"Failed to add reaction: {e}")
+        
 bot.start(token)
