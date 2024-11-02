@@ -269,13 +269,15 @@ async def help(ctx: SlashContext):
         inline=False
     )
     await ctx.send(embeds=[hembed])
-@bot.event()
-async def on_message_create(event: Message):
-    if event.message.author.bot:
+@bot.event
+
+async def on_message_create(message: interactions.Message):
+    if message.author.bot:
         return
     emoji_list = [
-        "🤔","😕","🙄","🤨","🤷","👮","😊","👍","👎","👌","👏","🙏","🤝","👌"
+        "🤔", "😕", "🙄", "🤨", "🤷", "😊", "👍", "👎", "👌", "👏", "🙏", "🤝", "👌"
     ]
     prod_reply = random.choice(emoji_list)
-    await event.message.reply(content=prod_reply)
+    await message.reply(content=prod_reply)
+
 bot.start(token)
