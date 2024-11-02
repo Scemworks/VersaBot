@@ -21,7 +21,6 @@ async def on_ready():
     description="Ping and get latency of the bot"
 )
 async def ping(ctx: SlashContext):
-    """Command that returns the bot's latency."""
     pings = Embed(
         title="Pong!",
         description=f"{round(bot.latency * 1000)}ms",
