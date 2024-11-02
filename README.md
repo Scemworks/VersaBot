@@ -50,27 +50,23 @@ python main.py
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](src/flip)
+![Screenshot1](src/flip.mp4)
 - *Working of flip command*
-![Screenshot1](src/fortune)
+![Screenshot1](src/fortune.mp4)
 - *Working of fortune command*
-![Screenshot1](src/ping)
+![Screenshot1](src/ping.mp4)
 - *Working of ping command*
-![Screenshot1](src/qr)
+![Screenshot1](src/qr.mp4)
 - *Working of qr command*
-![Screenshot1](src/tarot)
+![Screenshot1](src/tarot.mp4)
 - *Working of tarot command*
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+
 
 ### Project Demo
 # Video
 [Add your demo video link here]
 *Explain what the video demonstrates*
 
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
 - Mohammed Shadin: Main codes for VersaBot along with rest of the commands
