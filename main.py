@@ -67,7 +67,7 @@ async def flip(ctx: SlashContext):
 
     coinembed2 = Embed(
         title="Coin Flip",
-        description=f"Flipped {random.choice(coin)}",
+        description=f"Flipped to {random.choice(coin)}",
         color=interactions.Color.random()
     )
     await msg.edit(embeds=[coinembed2])
