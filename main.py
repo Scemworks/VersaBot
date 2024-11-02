@@ -221,6 +221,7 @@ async def tarot(ctx: SlashContext):
     {"name": "The High Priestess", "emoji": "👸"},
     {"name": "The Empress", "emoji": "👑"},
     {"name": "The Emperor", "emoji": "🤴"},
+    {"name": "Error 404: Card Not Found", "emoji": "❓"}
 ]
     tembed = Embed(
         title="Tarot Card",
