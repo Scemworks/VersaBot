@@ -273,6 +273,17 @@ async def help(ctx: SlashContext):
 async def on_message_create(event: Message):
     if event.message.author.bot:
         return
-    prod_reply = "Keep Going, You are doing great!"
-    await event.message.reply(content=prod_reply)
+bot.event
+
+async def on_message_create(message: interactions.Message):
+    if message.author.bot:
+        return
+    
+    emoji_list = [
+        "🤔","😕","🙄","🤨","🤷","👮","😊",
+        "👍","👎","👌","👏","🙏","🤝","👌"
+    ]
+
+    await message.reply(content=random.choice(emoji_list))
+
 bot.start(token)
