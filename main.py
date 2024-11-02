@@ -18,14 +18,15 @@ async def on_ready():
 
 @slash_command(
     name="ping",
-    description="Ping the latency of the bot",
+    description="Ping and get latency of the bot"
 )
 async def ping(ctx: SlashContext):
-    ping = Embed(
-        title = "Pong!",
+    """Command that returns the bot's latency."""
+    pings = Embed(
+        title="Pong!",
         description=f"{round(bot.latency * 1000)}ms",
-        color = interactions.Color.random()
-    )
-    await ctx.send(embeds=ping)
-
+        color=interactions.Color.random()
+        )
+    await ctx.send(embeds=[pings])
+    
 bot.start(token)
