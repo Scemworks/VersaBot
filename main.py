@@ -17,7 +17,7 @@ async def on_ready():
     print(f"Owned by: {bot.owner}")
 
 @slash_command(
-    name="Ping",
+    name="ping",
     description="Ping the latency of the bot",
 )
 async def ping(ctx: SlashContext):
