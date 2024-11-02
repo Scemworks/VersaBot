@@ -35,7 +35,7 @@ For Software:
 
 ### Implementation
 For Software:
-# Installation
+# Installationqr
 ```bash
 pip install -r requirements.txt
 ```
@@ -50,14 +50,16 @@ python main.py
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](https://media.discordapp.net/attachments/1302222338271744100/1302225621090308138/Mc)
-- *Working of dice command*
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
+![Screenshot1](src/flip)
+- *Working of flip command*
+![Screenshot1](src/fortune)
+- *Working of fortune command*
+![Screenshot1](src/ping)
+- *Working of ping command*
+![Screenshot1](src/qr)
+- *Working of qr command*
+![Screenshot1](src/tarot)
+- *Working of tarot command*
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
 *Add caption explaining your workflow*
