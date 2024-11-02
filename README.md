@@ -64,12 +64,6 @@ For Software:
 *Working of dice command*
 
 
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-
 ## Team Contributions
 - Mohammed Shadin: Main codes for VersaBot along with rest of the commands
 - Aysha Henan: Fortune command, Productivivity Parrot command
