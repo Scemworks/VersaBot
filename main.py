@@ -110,19 +110,21 @@ async def qr(ctx: SlashContext, link: str, logo_url: str = None, color: str = No
     img = qr.make_image(fill_color=color or "black", back_color="white").convert("RGB")
     if logo_url:
         try:
-            async with aiohttp.ClientSession() as session:
-                async with session.get(logo_url) as resp:
-                    resp.raise_for_status()
-                logo_data = await resp.read()
-            logo = Image.open(BytesIO(logo_data))
-            qr_width, qr_height = img.size
-            logo_size = int(qr_width * 0.2)
-            logo = logo.resize((logo_size, logo_size))
+            async with aiohttp.ClientSession() as session:    
+                async with session.get(logo_url) as r:
+                    r.raise_for_status() 
+                    logo_data = await r.read()  
 
-            logo_position = ((qr_width - logo_size)//2,(qr_height - logo_size)//2)
-            img.paste(logo, logo_position, mask = logo if logo.mode == "RGBA" else None)
+            logo = Image.open(BytesIO(logo_data)) 
+            qr_width, qr_height = img.size 
+            logo_size = int(qr_width * 0.2) 
+            logo = logo.resize((logo_size, logo_size)) 
+
+            logo_position = ((qr_width - logo_size) // 2, (qr_height - logo_size) // 2)
+            img.paste(logo, logo_position, mask=logo if logo.mode == "RGBA" else None)
         except Exception as e:
-            print(f"Error occurred while downloading logo: {e}")
+            await ctx.send(f"An error occurred while fetching the logo: {str(e)}")
+            return
     buffer = BytesIO()
     img.save(buffer, format="PNG")
     buffer.seek(0)
