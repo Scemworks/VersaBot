@@ -241,32 +241,32 @@ async def help(ctx: SlashContext):
         color=interactions.Color.random()
     )
     hembed.add_field(
-        name="`/help`",
+        name="``/help``",
         value="Shows this message",
         inline=False
     )
     hembed.add_field(
-        name="`/dice`",
+        name="``/dice``",
         value="Rolls a dice",
         inline=False
     )
     hembed.add_field(
-        name="`/flip`",
+        name="``/flip``",
         value="Flips a coin",
         inline=False
     )
     hembed.add_field(
-        name="`/qr`",
+        name="``/qr``",
         value="Generates a QR Code from link/text given (with optional support for logo and color)",
         inline=False
     )
     hembed.add_field(
-        name="`/fortune`",
+        name="``/fortune``",
         value="Get a random fortune",
         inline=False
     )
     hembed.add_field(
-        name="`/tarot`",
+        name="``/tarot``",
         value="Draw a tarot card with an emoji!",
         inline=False
     )
