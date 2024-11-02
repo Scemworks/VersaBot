@@ -127,7 +127,7 @@ async def qr(ctx: SlashContext, link: str, logo_url: str = None, color: str = No
     img.save(buffer, format="PNG")
     buffer.seek(0)
 
-    file = File(file=buffer, filename="qrcode.png")
+    file = File(file=buffer, file_name="qrcode.png")
     qrembed = Embed(
         title="QR Code",
         description=f"QR Code generated for {link}",
