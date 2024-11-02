@@ -275,7 +275,7 @@ async def on_message_create(event: Message):
         return
 bot.event
 
-async def on_message_create(message: interactions.Message):
+async def on_message_create(message: Message):
     if message.author.bot:
         return
     
