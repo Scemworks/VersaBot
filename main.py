@@ -274,7 +274,7 @@ async def help(ctx: SlashContext):
 async def on_message_create(message: interactions.Message):
     if message.author.bot:
         return
-    emoji_list = [
+        emoji_list = [
         "🤔", "😕", "🙄", "🤨", "🤷", "😊", "👍", "👎", "👌", "👏", "🙏", "🤝", "👌"
     ]
     prod_reply = random.choice(emoji_list)
