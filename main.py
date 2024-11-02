@@ -265,7 +265,7 @@ emoji_list = [
 async def on_message(message):
     if message.author.id == bot.user.id:
         return
-    if message.content.startswith(''):
+    if message.content.startswith('.'):
         await message.reply(random.choice(emoji_list))
 
 
