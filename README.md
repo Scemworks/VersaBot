@@ -50,16 +50,16 @@ python main.py
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](src/flip.gif)
 - *Working of flip command*
-![Screenshot1](src/fortune.gif)
+![Screenshot1](src/flip.gif)
 - *Working of fortune command*
-![Screenshot1](src/ping.gif)
+![Screenshot1](src/fortune.gif)
 - *Working of ping command*
-![Screenshot1](src/qr.gif)
+![Screenshot1](src/ping.gif)
 - *Working of qr command*
-![Screenshot1](src/tarot.gif)
+![Screenshot1](src/qr.gif)
 - *Working of tarot command*
+![Screenshot1](src/tarot.gif)
 
 
 ### Project Demo
