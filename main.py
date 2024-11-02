@@ -221,6 +221,20 @@ async def tarot(ctx: SlashContext):
     {"name": "The High Priestess", "emoji": "👸"},
     {"name": "The Empress", "emoji": "👑"},
     {"name": "The Emperor", "emoji": "🤴"},
+    {"name": "The Hierophant", "emoji": "🧙‍♀️"},
+    {"name": "The lovers", "emoji": "👩‍❤️‍👩"},
+    {"name": "The Chariot", "emoji": "🚀"},
+    {"name": "Strength", "emoji": "💪"},
+    {"name": "The Hermit", "emoji": "🧝"},
+    {"name": "Wheel of Fortune", "emoji": "🎲"},
+    {"name": "Justice", "emoji": "⚔️"},
+    {"name": "The Hanged Man", "emoji": "🏳️"},
+    {"name": "Death", "emoji": "☠️"},
+    {"name": "Temperance", "emoji": "🧙‍♂️"},
+    {"name": "The Devil", "emoji": "👹"},
+    {"name": "The Tower", "emoji": "🏰"},
+    {"name": "The Star", "emoji": "⭐"},
+    {"name": "The Moon", "emoji": "🌙"},
     {"name": "Error 404: Card Not Found", "emoji": "❓"}
 ]
     tembed = Embed(
