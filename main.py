@@ -260,19 +260,13 @@ emoji_list = [
 ]
 
 @bot.event
-async def message_create(message):
-    # Ignore messages from bots (including itself)
-    if message.author.bot:
+
+
+async def on_message(message):
+    if message.author.id == bot.user.id:
         return
+    if message.content.startswith(''):
+        await message.reply(random.choice(emoji_list))
 
-    # Choose a random emoji from the list
-    emoji = random.choice(emoji_list)
 
-    try:
-        # Add the reaction to the message
-        await message.create_reaction(emoji)
-        print(f"Added {emoji} reaction to message ID {message.id}")
-    except interactions.api.error.DiscordError as e:
-        print(f"Failed to add reaction: {e}")
-        
 bot.start(token)
