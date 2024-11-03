@@ -71,6 +71,15 @@ Your server's new best friend for entertainment and useful tools!
 
 ### Implementation
 For Software:
+
+# Clone Repository
+```bash
+git clone https://github.com/Scemworks/VersaBot.git
+```
+# Navigate to the project directory
+```bash
+cd VersaBot
+```
 # Installation
 ```bash
 pip install -r requirements.txt
@@ -80,7 +89,10 @@ pip install -r requirements.txt
 python main.py
 ```
 # Note
-- Add your bot token in the .env file before running the bot.
+* Add your bot token in the .env file before running the bot.
+```plaintext
+TOKEN="your_bot_token"
+```
 
 ### Project Documentation
 For Software:
