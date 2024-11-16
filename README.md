@@ -94,8 +94,14 @@ python main.py
 TOKEN="your_bot_token"
 ```
 
+### Additional Resources
+For more details about VersaBot, including its commands and setup instructions, visit the official site: [VersaBot Documentation](https://versabmainot-tau.vercel.app/)
+
 ### Project Documentation
 For Software:
+
+# Video Demonstration
+[Watch the video showcasing VersaBot in action!](https://youtu.be/arMEIf3-GDo)
 
 # Screenshots
 
