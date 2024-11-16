@@ -95,7 +95,7 @@ TOKEN="your_bot_token"
 ```
 
 ### Additional Resources
-For more details about VersaBot, including its commands and setup instructions, visit the official site: [VersaBot Documentation](https://versabmainot-tau.vercel.app/)
+For more details about VersaBot, including its commands and setup instructions, visit the official site: [VersaBot Documentation](https://versabot-tau.vercel.app/)
 
 ### Project Documentation
 For Software:
