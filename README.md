@@ -136,6 +136,8 @@ Here are some examples of VersaBot's commands in action:
 ![Dice rolling animation](src/dice.gif)
 > Roll virtual dice for games or decisions
 
+## Help Command
+> Get help with the bot's commands and usage
 
 ## Team Contributions 🤝
 
